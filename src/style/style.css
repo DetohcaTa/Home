@@ -1,24 +1,24 @@
 @font-face {
   font-family: "inter";
-  src: url("../resources/inter-italic.woff2") format("woff2"), url("../resources/inter-italic.woff") format("woff");
+  src: url("./resources/inter-italic.woff2") format("woff2"), url("./resources/inter-italic.woff") format("woff");
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: "inter";
-  src: url("../resources/inter-mediumitalic.woff2") format("woff2"), url("../resources/inter-mediumitalic.woff") format("woff");
+  src: url("./resources/inter-mediumitalic.woff2") format("woff2"), url("./resources/inter-mediumitalic.woff") format("woff");
   font-weight: 500;
   font-style: italic;
 }
 @font-face {
   font-family: "inter";
-  src: url("../resources/inter-regular.woff2") format("woff2"), url("../resources/inter-regular.woff") format("woff");
+  src: url("./resources/inter-regular.woff2") format("woff2"), url("./resources/inter-regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "inter";
-  src: url("../resources/inter-semibolditalic.woff2") format("woff2"), url("../resources/inter-semibolditalic.woff") format("woff");
+  src: url("./resources/inter-semibolditalic.woff2") format("woff2"), url("./resources/inter-semibolditalic.woff") format("woff");
   font-weight: 600;
   font-style: italic;
 }
@@ -952,7 +952,12 @@ a {
     font-size: calc((1vh + 1vw) * 1.3);
   }
   .hero__zacaz {
-    width: 126px;
+    font-size: 15px;
+    width: 117px;
+    height: 32px;
+  }
+  .hero__zacaz svg {
+    width: 26px;
   }
   .hero__next svg {
     transform: translate(50px, 0);
@@ -966,11 +971,16 @@ a {
   .hero__next span {
     font-size: calc((1vh + 1vw) * 2);
   }
+  .svoi__content {
+    margin-bottom: 60px;
+  }
   .svoi__content img {
     width: 100vw;
   }
   .svoi__progect {
     font-size: calc((1vh + 1vw) * 1.7);
+    padding: 0;
+    height: 56px;
   }
   .svoi__progect svg {
     width: 35px;
@@ -981,15 +991,26 @@ a {
   }
   .present__slide_text1 {
     width: 66%;
+    color: rgba(0, 243, 39, 0.98);
+    text-shadow: none;
   }
   .present__slide_text2 {
     width: 76%;
+    color: #ff9a03;
+    text-shadow: none;
   }
   .present__slide_text3 {
     width: 76%;
+    text-shadow: none;
+    color: #dfff39;
   }
   .present__slide_text5 {
     width: 60%;
+    text-shadow: none;
+  }
+  .present__slide_text6 {
+    color: #007aff;
+    text-shadow: none;
   }
   .works__header {
     font-size: 25px;
