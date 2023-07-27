@@ -1,0 +1,63 @@
+.present{
+    &__swiper{
+        margin-bottom: 23px;
+    }
+    &__foto{
+      position: relative;
+      width:  100vw;
+
+    }
+    &__text{
+      position: absolute;
+      @include font(600,59px, $black ,123%);
+      font-style: italic;
+      text-shadow: -4px 0px  rgba(0, 243, 39, 0.98);
+   
+  
+    }
+  &__slide {
+    position: relative;
+    &_text1 {
+      top: 10%;
+      left: 30%;
+      width: 40%;
+    }
+ 
+    &_text2 {
+     bottom: 14%;
+     left: 25%;
+      width: 41%;
+      text-shadow: -5px 0px  #FF9A03;
+
+    }
+    &_text3 {
+      bottom: 14%;
+      left: 8%;
+      color: #FFF;
+      text-shadow: -5px 0px   rgba(72, 220, 253, 0.98);
+      width: 55%;
+    }
+    &_text4 {
+      top: 12%;
+      right: 7%;
+      width: 50%;
+    }
+    &_text5 {
+      top: 18%;
+      left: 5%;
+      text-shadow: -4px 0px #F00;
+      width: 35%;
+
+    }
+    &_text6 {
+      top: 25%;
+      left: 25%;
+      text-shadow: -4px 0px #F00;
+      width: 53%;
+    }
+  }
+  
+
+}
+
+

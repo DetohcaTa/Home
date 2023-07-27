@@ -1,0 +1,120 @@
+.comment{
+    
+    &__uno{
+        display: flex;
+        justify-content: space-between;
+        padding: 23px;
+        border-radius: 40px;
+       border: 5px solid $green;
+       margin-bottom: 160px;
+
+    }
+    &__left{
+        &_no{
+            width: 100%;
+        }
+        width: 54.3%;
+        &_top{
+            display:flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            h4{
+                @include font(600, 30px, $fonts);
+                font-style: italic;
+            }
+            span{
+                @include font(400, 20px, $grey);
+                font-style: italic;
+            }
+
+        }
+
+        &_text{
+            @include font(500, 30px, $burgundy);
+            font-style: italic;
+        }
+        &_dmi{
+            @include font(500, 30px, $burgundy);
+            font-style: italic;
+            overflow: scroll;
+            height: 476px;
+        }
+    }
+    &__foto{
+        width: 482px;
+        img{
+            width: 482px;
+            height: 273px;
+
+        }
+    }
+    &__two{
+        display: flex;
+        flex-direction: row-reverse;
+        &__foto{
+            overflow: scroll;
+            display: flex;
+            width: 562px;
+        img{
+            width: 562px;
+            height: 518px;
+
+        }
+        }
+    }
+    &__foto2{
+        &_home{
+            img{
+                width: 562px;
+                height: 518px;
+            }
+        }
+        &__swiper{
+            width: 562px;
+            overflow: hidden;
+
+        }
+        img{
+            width: 562px;
+            height: 518px;
+        }
+    }
+    &__prev{
+        position: sticky;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 70px;
+        background-color: $white;
+        top: 0;
+        z-index: 10;
+        margin-bottom: 162px;
+        &_kat{
+            display: flex;
+            height: 63px;
+            width: 539px;
+            border-radius: 30px;
+            border: 1px solid $white;
+            padding: 15px 19px;
+            background-color: $button;
+            box-shadow: -7px 9px 2px 0px rgba(92, 122, 129, 0.98);
+    
+    
+        }
+    
+        span{
+            @include font(400, 33px, $black, 80%);
+            font-style: italic;
+            margin-left: 30%;
+        }
+        svg{
+            animation: arrow 2s linear infinite;
+            transform: translate(100px, 0);
+            width: 77px;
+            height: 19px;
+            margin-top: 4px;
+        
+        }
+    }
+    
+}
