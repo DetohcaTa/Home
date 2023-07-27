@@ -1,0 +1,125 @@
+.hero{
+    &__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    &__info{
+        @include font(400, calc($fz * 2.5), $black);
+        -webkit-text-stroke: 1px $fonts;
+        font-style: italic;
+        margin-bottom: 65px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+     
+    }
+    &__greem{
+        @include font(500, calc($fz * 1.5), $black, 140%);
+        -webkit-text-stroke: 1px $fonts;
+        font-style: italic;
+        width: 63.5%;
+        margin-bottom: 108px;
+    }
+    &__next{
+        position: sticky;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 70px;
+        background-color: $white;
+        top: 0;
+        z-index: 10;
+        margin-bottom: 70px;
+        a{
+            height: 63px;
+            width: 539px;
+            border-radius: 30px;
+            border: 1px solid $white;
+            padding: 15px 19px;
+            background-color: $button;
+            box-shadow: -7px 9px 2px 0px rgba(92, 122, 129, 0.98);
+
+
+        }
+
+        span{
+            @include font(400, 33px, $black, 80%);
+            font-style: italic;
+            margin-right: 20px;
+        }
+        svg{
+            animation: arrow 2s linear infinite;
+            transform: translate(100px, 0);
+            width: 77px;
+            height: 19px;
+            margin-top: 4px;
+        }
+        @keyframes arrow {
+        50%{  transform: none; }
+            }
+        
+    }
+    &__cart{
+        position: relative;
+        min-height: 360px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 150px;
+        &__image{
+            width: 499px;
+            height: 360px;
+            border-radius: 10px;
+        }
+        &_content{
+            display: flex;
+            justify-content: space-around;
+        }
+        &__middle{
+            max-width: 300px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            span{
+                @include font(400, 29px, $black,124%);
+                font-style: italic;
+                text-align: center;
+                margin-top: 81px;
+            }
+        }
+        &__right{
+            @include font(400, 27px, $black,118%);
+            font-style: italic;
+            width: 46%;
+            min-width: 439px;
+        }
+    }
+    &__zacaz{
+              width: 269px;
+              height: 73px;
+              display: inline-flex;
+              justify-content: space-between;
+              @include font(400, 29px, $black,124%);
+              font-style: italic;
+              border-radius: 10px;
+              border: 1px solid $black;
+              background-color: transparent;
+              box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+              padding: 18px 58px 19px 19px;
+              margin-left: 20px;
+              transition: all 0.4s ease-in;
+              &:hover{
+                background-color: $blue;
+
+              }
+              svg{
+                width: 53px;
+                height: 39px;
+              }
+            }
+         
+           
+    
+}
+

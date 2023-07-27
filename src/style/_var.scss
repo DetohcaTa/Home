@@ -1,0 +1,28 @@
+$white: #fff;
+$black: #000;
+$fonts: #BF0303;
+$burgundy:#662020;
+$blue: #48DCFD;
+$dark-green: #071701;
+$grey:#475361;
+$green: #36EA52;
+$orange: #FF9A03;
+$dark-blue: #0B36CD;
+$button: #D7FBF4;
+$fz: calc(1vh + 1vw);
+
+
+@mixin font( $weght, $size: 14px,  $color: $black, $lineHeight: 0) {
+    @if $size != 14px {
+        font-size: $size;
+    }
+    font-size: $size;
+    font-weight: $weght;
+    @if $lineHeight != 0 {
+        line-height: $lineHeight;
+    }
+    color: $color;
+    @if $color != $black {
+        color: $color;
+    } 
+}

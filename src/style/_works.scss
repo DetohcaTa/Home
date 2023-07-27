@@ -1,0 +1,75 @@
+.works{
+    &__top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__header{
+        @include font(500, 65px, $fonts);
+         font-style: italic;
+         -webkit-text-stroke: 1px $black;
+         margin-bottom: 40px;
+
+    }
+    &__text{
+        width: 72%;
+        @include font(400, 30px, $fonts, 117%);
+        font-style: italic;
+        -webkit-text-stroke: 1px $black;
+        margin-bottom: 105px;
+    }
+    &__bottom{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 120px;
+        img{
+            width: 46.9%;
+            height: 500px;
+        }
+    }
+    &__left{
+        padding: 22px;
+        border-radius: 21px;
+        width: 49%;
+        background-color: $blue;
+        height: 500px;
+        &_text{
+            @include font(400, 26px, $fonts);
+            font-style: italic;
+            -webkit-text-stroke: 1px $black;
+            text-align: center;
+            margin: 19% auto 28%; 
+        }
+        &_uno{
+            width: 235px;
+            height: 56px;
+            @include font(400, 23px, $white);
+            font-style: italic;
+            box-shadow: 0px 9px 4px 0px #475361;
+            background-color: $orange ;
+            border-radius: 21px;
+            margin-right: 31px;
+            transition: all 0.5s ease-in;
+            &:hover{
+             background-color: $dark-blue;
+
+            }
+        }
+        &_two{
+            width: 281px;
+            height: 56px;
+            @include font(400, 26px, $white);
+            font-style: italic;
+            box-shadow: 0px 9px 4px 0px #475361;
+            background-color: $orange ;
+            border-radius: 21px;
+            transition: all 0.5s ease-in;
+            &:hover{
+             background-color: $dark-blue;
+
+            }
+        }
+    }
+
+
+}
